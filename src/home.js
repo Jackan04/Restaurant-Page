@@ -6,6 +6,7 @@ const content = document.querySelector("#content");
 function createElements(){
     const heroHeader = document.createElement("h1");
     heroHeader.setAttribute("id", "hero-header");
+    heroHeader.textContent = "Welcome to Odin's Restaurant!"
     
     const subTitle = document.createElement("h3");
     subTitle.textContent = "Bring your tastebuds on an adventure!"
