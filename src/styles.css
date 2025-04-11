@@ -1,25 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: lightblue;
+    background-color: white;
 
 }
 
-#welcome-container{
+header{
+    background-color: lightblue;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
-}
+    gap: 2rem;
+    width: 600px
 
-header{
-
-}
-
-#content{
 }
 
 img{

@@ -1,15 +1,16 @@
 import heroImage from "./heroImage.jpg";
 
-function createElements(){
+
+function renderHomePage(){
+    const content = document.querySelector("#content");
+    content.innerHTML = "";
+   
     const heroHeader = document.createElement("h1");
     heroHeader.setAttribute("id", "hero-header");
     heroHeader.textContent = "Welcome to Odin's Restaurant!"
     
     const subTitle = document.createElement("h3");
     subTitle.textContent = "Bring your tastebuds on an adventure!"
-    
-    const welcomeContainer = document.createElement("div");
-    welcomeContainer.setAttribute("id", "welcome-container");
 
     const welcomeText = document.createElement("p");
     welcomeText.setAttribute("id", "welcome-text");
@@ -18,19 +19,10 @@ function createElements(){
     const image = document.createElement("img");
     image.src = heroImage;
 
-    welcomeContainer.appendChild(heroHeader)
-    welcomeContainer.appendChild(subTitle)
-    welcomeContainer.appendChild(welcomeText)
-    welcomeContainer.appendChild(image)
-
-    return welcomeContainergi 
-}
-
-function renderHomePage(){
-    const content = document.querySelector("#content");
-    content.innerHTML = "";
-    const elements = createElements();
-    content.appendChild(elements)
+    content.appendChild(heroHeader)
+    content.appendChild(subTitle)
+    content.appendChild(welcomeText)
+    content.appendChild(image)
 
 }
 
