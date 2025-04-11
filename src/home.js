@@ -1,8 +1,5 @@
 import heroImage from "./heroImage.jpg";
 
-// DOM Elements
-const content = document.querySelector("#content");
-
 function createElements(){
     const heroHeader = document.createElement("h1");
     heroHeader.setAttribute("id", "hero-header");
@@ -26,13 +23,15 @@ function createElements(){
     welcomeContainer.appendChild(welcomeText)
     welcomeContainer.appendChild(image)
 
-    return welcomeContainer
+    return welcomeContainergi 
 }
 
 function renderHomePage(){
+    const content = document.querySelector("#content");
+    content.innerHTML = "";
     const elements = createElements();
     content.appendChild(elements)
 
 }
 
-export {renderHomePage, createElements };
+export {renderHomePage};
